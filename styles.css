@@ -84,7 +84,7 @@ hr {
 /* Contact */
 /* Section Content */
 .contact-content {
-  padding: 5% 10%;
+  padding: 5% 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -92,7 +92,6 @@ hr {
   flex: 1;
 }
 .contact-content > div {
-  width: 45%;
   min-width: 20em;
 }
 .content-list {
@@ -104,12 +103,32 @@ hr {
   border-color: #43658b;
 }
 .contact-card {
+  width: 23em;
+  margin: 1em;
   box-shadow: 0.1em 0.1em 1em lightgray;
 }
 #map {
-  width: 45%;
+  width: 50%;
   height: 25em;
+  margin: 1em;
   box-shadow: 0.1em 0.1em 1em lightgray;
+}
+
+@media only screen and (max-width: 1024px) {
+  #map {
+    width: 70%;
+    height: 29em;
+  }
+
+  .contact-card {
+    width: 25em;
+  }
+}
+
+@media only screen and (min-width: 2048px) {
+  .contact-content {
+    padding: 5% 20%;
+  }
 }
 
 /* Feedback  */
